@@ -4,6 +4,7 @@ session_start();
 if(!isset($_SESSION['user_id'])){
 
     echo 'you have to login first';
+    header ("location: login.php");
     exit();
 
 
